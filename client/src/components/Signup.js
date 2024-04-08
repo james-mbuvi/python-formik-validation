@@ -24,7 +24,7 @@ export const SignupForm = () => {
       .number()
       .positive()
       .integer()
-      .required("Must enter age")
+      .required("Must ente age")
       .typeError("Please enter an Integer")
       .max(125),
   });
@@ -53,7 +53,6 @@ export const SignupForm = () => {
 
   return (
     <div>
-      <h1>Customer sign up form</h1>
       <form onSubmit={formik.handleSubmit} style={{ margin: "30px" }}>
         <label htmlFor="email">Email Address</label>
         <br />
